@@ -1,0 +1,81 @@
+//PSEUDOCODE CHALLENGE
+
+//1.NEWTON SECOND LAW
+STEP
+1. Diketahui sebuah mobil memiliki masa benda (m) 600 kg
+2. Simpan "m" dengan nilai 600
+3. Diketahui mobil didorong oleh 3 orang dengan percepatan (a) 2m/s2
+4. Simpan "a" dengan nilai 2
+5. Diketahui resultan gaya (F) dihitung dengan rumus
+5. Simpan "F" tanpa diberikan nilai, dan akan diisi nanti setelah perhitungan
+6. Hitung hasil perkalian "masabenda" dengan "dayadorong"
+7. Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "F"
+8. Tampilkan nilai dari "F"
+
+PSEUDOCODE
+SET "m" with 600 
+SET "a" with 2
+SET "F" 
+CALCULATE "m" times "a"
+STORE INTO "F" 
+DISPLAY "F"
+
+
+//2.TAHUN KABISAT
+STEP
+1. Masukkan tahun dengan sembarang tahun
+2. Simpan tahun
+3. Apakah tahun yang disimpan merupakan Tahun Kabisat
+4. Jika sisa hasil bagi tahun = 0 dan tidak habis dibagi 100 atau habis dibagi 400
+5.  maka tampilkan "Tahun Kabisat"
+6. Selain itu tampilkan "Bukan Tahun Kabisat"
+
+PSEUDOCODE
+SET "tahun" with 2020
+SET "kabisat"
+CALCULATE "tahun" % 4 == 0 && year 100 is 0 && year % 400
+STORE into "kabisat"
+IF "kabisat" THEN
+    DISPLAY "Tahun Kabisat" 
+ELSE 
+    DISPLAY "Bukan Tahun Kabisat"
+ENDIF
+
+
+//3.LAUNDRY DAY
+STEP
+1. Foxie akan mencuci pakaian sebanyak 20 ke mesin cuci
+2. Masukkan pakaian satu per satu ke mesin cuci
+3. Lakukan langkah 2 secara berulang sampai dengan 20 pakaian
+4. Mesin cuci akan menyala bila semua pakaian sudah masuk ke mesin cuci
+
+PSEUDOCODE
+SET "pakaian" with 1
+FOR "pakaian" To 20 Do
+    IF "pakaian" == 20 THEN
+        DISPLAY "Nyalakan Mesin Cuci"
+    Increment counter
+    ENDIF
+ENDFOR
+
+
+//4.PERIKSA KUKU
+STEP
+1. Seorang guru akan memeriksa kuku siswa-siswi dikelas sebanyak 40 orang
+2. Check siswa/siswi yang memiliki kuku panjang
+3. Jika siswa/siswi kukunya panjang maka akan dihukum
+4. Jika tidak guru akan memuji siswa/siswi
+
+PSEUDOCODE
+SET "siswa" with 1
+STORE "kuku" with value ("pendek" || "panjang")
+WHILE "siswa" To 40 Do
+    READ "kuku"
+    IF "kuku" == "pendek" THEN
+        DISPLAY "Guru memuji murid"
+    ELSE "kuku" == "panjang" THEN
+        DISPLAY "Guru menghukum siswa"
+    ENDIF
+    Increment counter
+ENDWHILE
+
