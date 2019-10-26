@@ -38,6 +38,7 @@ var namaKsatria = (nama2 + peran1)
 }
 console.log();
 
+//Output untuk Input nama = 'Danu' dan peran 'Tabib'
 var namaTabib = (nama3 + peran2);
     if (namaTabib === 'Johan'+'Tabib') {
         console.log(`Selamat datang di Dunia Proxytia, ${nama2}`);
@@ -51,6 +52,7 @@ var namaTabib = (nama3 + peran2);
 }
 console.log();
 
+//Output untuk Input nama = 'Zero' dan peran 'Penyihir'
 var namaPenyihir = (nama4 + peran3);
     if (namaKsatria === 'Johan'+'Penyihir') {
         console.log(`Selamat datang di Dunia Proxytia, ${nama2}`);
