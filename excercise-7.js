@@ -50,4 +50,3 @@ while (i<rows3) {
   console.log(bintang3);
   i++;
 }
-
