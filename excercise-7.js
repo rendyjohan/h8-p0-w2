@@ -2,24 +2,32 @@
 
 // 1. Menyusun Barisan Bintang
 console.log('SOAL1');
-for (var rows1 = 1; rows1 <= 5; rows1 ++) {
-    console.log('*');
+var rows1;
+var counterRows1;
+
+rows1 = 5;
+counterRows1 = 0;
+
+while (counterRows1<rows1) {
+  console.log('*');
+  counterRows1++;
 }
 console.log('---------------------------------------');
 
 // 2. Menyusun Barisan Bintang Dengan Nested Looping
 console.log('SOAL2');
-var rows2 = 5
-for (var i = 0; i < rows2; i++) {
-	var bintang2 = '';
-	for (var j = 0; j < rows2; j++) {
-		if (i % 2 === 0) {
-			bintang2 += '*';
-		} else {
-			bintang2 += '*';
-		}
-	}
-	console.log(bintang2);
+var rows2 = 5;
+
+var i=0;
+while (i<rows2) {
+  var bintang2 = '*';
+  var j = 1;
+  while (j<rows2) {
+    bintang2 = bintang2 + '*';
+    j++;
+  }
+  console.log(bintang2);
+  i++;
 }
 console.log('---------------------------------------');
 
@@ -27,14 +35,19 @@ console.log('---------------------------------------');
 // 3. Menyusun Barisan Tangga Bintang Dengan Nested Looping
 console.log('SOAL3');
 
-var rows3 = 4;
-for (var i = 1; i <= 5; i++) {
-	var bintang3 = '*';
-	for (var j = i ; j <= rows3; j++) {
-		bintang3 += '*';
-	}
-	console.log(bintang3);
-}
+var rows3 = 5;
 
-console.log()
+var initial = 1;
+var i = 0;
+
+while (i<rows3) {
+  var bintang3 = '*';
+  var j=0;
+  while (j<i) {
+    bintang3 = bintang3 +'*';
+    j++;
+  }
+  console.log(bintang3);
+  i++;
+}
 
